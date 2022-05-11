@@ -13,6 +13,7 @@ export const getMatchesFromPlayer = async (playerId: number) => {
       player(steamAccountId: ${playerId}) {
         matches(request: { isParty: true }) {
           id
+          parsedDateTime
         }
       }
     }

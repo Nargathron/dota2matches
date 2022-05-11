@@ -4,12 +4,12 @@ import express from "express";
 const app = express();
 const port = 3000;
 
-app.get("/getMatches/:id", async (req, res) => {
+app.get("/tg/getMatches/:id", async (req, res) => {
   const matches = await getMatchesFromPlayer(req.params.id);
   res.send(matches);
 });
 
-app.get("/getMatchStat/:id", async (req, res) => {
+app.get("/tg/getMatchStat/:id", async (req, res) => {
   const match = await getMatchfromStratz(req.params.id);
   res.send(match);
 });
