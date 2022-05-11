@@ -1,0 +1,7 @@
+.env
+node_modules
+dist
+interfaces
+prisma
+temp.ts
+yarn.lock
